@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif; 
+}
+/*start nav*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:  0 10.248vw;
+    height:80px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+    width:100%;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style:none;
+    width: 470px;
+    
+}
+
+nav ul a{
+    color: black;
+    text-decoration: none;
+}
+
+nav .signin{
+    width: 145px;
+    height: 40px;
+    background-color:rgb(39, 174, 96);
+    border-radius: 5px;
+    border:none;
+    color: white;
+}
+nav .navlist {
+    background-color:white;
+    border: 2px solid rgb(39, 174, 96);
+    padding: 10px;
+    border-radius: 5px;
+    display:none;
+}
+nav .navlist svg{
+    color: rgb(39, 174, 96) ;
+    font-size: 20px;
+
+}
+
+
+/*end nav*/
+
+
+/*start hero*/
+.hero{
+    position: relative;
+    height: 100vh;
+    
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    max-width: max-content;
+}
+
+.hero h1{
+    font-size: 3rem;
+    max-width: 520px;
+    color: white;
+    line-height: 80px;
+}
+
+.hero p{
+    color: white;
+}
+/*end hero*/
+/*start main*/
+/*start first section*/
+.first-sec{
+    background-color: rgb(247, 249, 252);
+    padding: 100px 0 ;
+    
+
+}
+h2{
+    width: max-content;
+    margin: 0 auto;
+}
+.first-sec .card{
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    margin-top: 63px;
+
+}
+.first-sec .card div{
+    height: 165px;
+    width: 195px;
+    background-color: rgb(247, 249, 252);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 5px 5px 5px  rgb(238, 241, 245),5px 5px 5px  rgb(238, 241, 245);
+    
+}
+.first-sec .card img{
+    width: 70px;
+}
+/*end first section*/
+/*start second section*/
+.second-sec{
+    padding: 100px 0;
+}
+.second-sec .card {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 63px;
+} 
+.second-sec .card .recent{
+    width: 350px;
+    height: 340px;
+    box-shadow: 5px 5px 5px  rgb(238, 241, 245);
+}
+.second-sec .card img{
+    width: 100%;
+}
+.second-sec .card h3{
+    margin: 35px 0 15px 30px;
+}
+.second-sec .card .end {
+    border-top: 1px solid rgb(201, 197, 197);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.second-sec .card .end p{
+    color: gray;
+}
+.second-sec .card .end .price{
+    background-color:rgb(39, 174, 96);
+    padding: 5px;
+    color: white;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+/*end second section*/
+/*start third section*/
+.third-sec{
+    padding: 70px 0;
+}
+.third-sec .card{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 63px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.third-sec .card div{
+    width: 346px;
+    position: relative;
+}
+.third-sec .card  div img{
+    width: 100%;
+    border-radius: 5px;
+}
+.third-sec .card div h3{
+    width: 100% ;
+    height: 100% ;
+    background-color: rgba(183, 186,192, 0.5);
+    position:absolute;
+    left:20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+/*end third section*/
+/*start foorter*/
+footer{
+    background-color: rgb(29, 38,54);
+    height: 67px;
+    width:100vw;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width:992px) {
+    html{
+        font-size: 12px;
+    }
+    nav ul{
+        display:none;
+    }
+    nav .navlist{
+        display:block;
+    }
+    nav .signin{
+        width:10.6149vw;
+        min-width: 70px;
+    }
+    nav img{
+        width: 100px;
+    }
+    .first-sec  .card,.second-sec .card,.third-sec .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
